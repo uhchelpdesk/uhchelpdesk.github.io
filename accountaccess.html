@@ -266,9 +266,23 @@
 
     </div>
 
-    <footer>
-        &copy; 2025 UHC Account Access. All rights reserved.
-    </footer>
+    <!-- Footer -->
+<footer>
+  <div class="footer-links">
+    <a href="terms.html">Terms & Condition</a> |
+    <a href="privacy.html">Privacy & Policy</a>
+  </div>
+  <p>© UHC Account Activation Portal</p>
+</footer>
 
+<script>
+// FAQ Accordion
+const faqs = document.querySelectorAll('.faq-item');
+faqs.forEach(faq => {
+  faq.addEventListener('click', () => {
+    faq.classList.toggle('active');
+  });
+});
+</script>
 </body>
 </html>
